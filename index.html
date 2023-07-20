@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <h1>The Pizza Maker</h1>
+        <p id="studentInfo"></p>
+
+        <form id="pizzaOrderForm">
+            <div class="form-group">
+                <label for="size">Size:</label><br>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="crust">Crust Type:</label><br>
+                <select id="crust" name="crust">
+                    <option value="thin">Thin</option>
+                    <option value="regular">Regular</option>
+                    <option value="deep">Deep Dish</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="extraCheese">Extra Cheese:</label>
+                <input type="checkbox" id="extraCheese" name="extra" value="Extra Cheese">
+            </div>
+            <div class="form-group">
+                <label for="sauce">Sauce:</label>
+                <input type="radio" id="tomato" name="sauce" value="Tomato">
+                <label for="tomato"> Tomato</label>
+                <input type="radio" id="bbq" name="sauce" value="BBQ">
+                <label for="bbq"> BBQ</label>
+            </div>
+            <div class="form-group">
+                <label for="toppings">Toppings:</label><br>
+                <input type="checkbox" id="cheese" name="toppings" value="Cheese">
+                <label for="cheese"> Cheese</label>
+                <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+                <label for="mushrooms"> Mushrooms</label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                <label for="pepperoni"> Pepperoni</label>
+                <input type="checkbox" id="olives" name="toppings" value="Olives">
+                <label for="olives"> Olives</label>
+            </div>
+            <div class="form-group">
+                <label for="delivery">Delivery Options:</label><br>
+                <input type="radio" id="pickup" name="delivery" value="Pick-up">
+                <label for="pickup"> Pick-up</label>
+                <input type="radio" id="homeDelivery" name="delivery" value="Home Delivery">
+                <label for="homeDelivery"> Home Delivery</label>
+            </div>
+            <input type="submit" value="Order">
+        </form>
+        <p id="output"></p>
+    </body>
+</html>
